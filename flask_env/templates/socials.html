@@ -1,0 +1,39 @@
+<!-- socials.html -->
+{% extends 'base.html' %}
+
+{% block title %}Socials{% endblock %}
+
+{% block content %}
+ <h1>Socials</h1>
+ <!-- Additional content for the socials page -->
+
+ <p>Welcome to my Socials Page. Add your social media links or content here.</p>
+ 
+ <div class="image-text-container">
+     <a href="https://github.com/chakraless">
+         <img src="{{url_for('static', filename='github.png')}}" alt="github" width="50" height="50">
+     </a>
+     <p>My Github</p>
+ </div>
+ <div class="image-text-container">
+     <a href="https://www.linkedin.com/in/chakraless-5ba102289/">
+         <img src="{{url_for('static', filename='Linkedin.png')}}" alt="Linkedin" width="50" height="50">
+     </a>
+     <p>My Linkedin</p>
+ </div>
+ <div class="image-text-container">
+        <img src="{{url_for('static', filename='discord.png')}}" alt="discord" width="50" height="50">
+    </a>
+    <p>My Discord: chakraless</p>
+</div>
+ <style>
+     .image-text-container {
+         display: flex;
+         align-items: center;
+         margin-bottom: 20px;
+     }
+     .image-text-container img {
+         margin-right: 10px;
+     }
+ </style>
+{% endblock %}
